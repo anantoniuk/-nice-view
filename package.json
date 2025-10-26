@@ -2,20 +2,20 @@
   "name": "nice-view",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://anantoniuk.github.io/nice-view",
+  "homepage": "https://anantoniuk.github.io/-nice-view",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /nice-view/"
+    "build": "parcel build src/*.html --public-url /-nice-view/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anantoniuk/nice-view.git"
+    "url": "git+https://github.com/anantoniuk/-nice-view.git"
   },
   "keywords": [],
   "author": "Antoniuk Anna <antoniuk.an17@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anantoniuk/nice-view/issues"
+    "url": "https://github.com/anantoniuk/-nice-view/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
