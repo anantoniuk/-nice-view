@@ -1,0 +1,14 @@
+.button {
+  background-color: $colorTextPrimary;
+
+  font-weight: 500;
+  color: $colorText;
+  border-radius: 16px;
+  padding: 14px 28px;
+  &:hover {
+    background-color: $colorText;
+    color: $colorTextPrimary;
+
+    border: 1px solid $colorTextPrimary;
+  }
+}

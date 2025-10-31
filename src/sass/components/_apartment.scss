@@ -1,0 +1,55 @@
+.apartment {
+  &__container {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+    padding-top: 20px;
+
+    width: 280px;
+
+    border-radius: 16px;
+    &:hover {
+      border: solid 2px $colorTextPrimary;
+    }
+  }
+
+  &__tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 500;
+    max-width: 270px;
+  }
+  &__subtitle {
+    font-size: 28px;
+    color: $colorTextSecondary;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  &__text {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  &__hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  &__button {
+    font-size: 18px;
+    text-align: center;
+  }
+}
