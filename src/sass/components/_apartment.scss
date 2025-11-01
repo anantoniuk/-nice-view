@@ -14,12 +14,17 @@
     align-items: center;
     box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
     padding-top: 20px;
-
+ border: 2px solid transparent;
     width: 280px;
+    transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+
 
     border-radius: 16px;
     &:hover {
       border: solid 2px $colorTextPrimary;
+      transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+      box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.237);
+    
     }
   }
 

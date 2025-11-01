@@ -1,14 +1,30 @@
 .button {
   background-color: $colorTextPrimary;
-
+  border: 1px solid transparent;
   font-weight: 500;
-  color: $colorText;
+  color: $colorBgPrimary;
   border-radius: 16px;
   padding: 14px 28px;
+  transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
   &:hover {
-    background-color: $colorText;
+    background-color: $colorBgPrimary;
     color: $colorTextPrimary;
-
     border: 1px solid $colorTextPrimary;
+    transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  }
+}
+
+.button--invert {
+  border-radius: 16px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  font-weight: 300;
+  font-size: 20px;
+  color: $colorTextSecondary;
+  background-color: $colorBgPrimary;
+  &:hover {
+    background-color: $colorTextPrimary;
+    color: $colorBgPrimary;
+    border: 1px solid transparent;
   }
 }
