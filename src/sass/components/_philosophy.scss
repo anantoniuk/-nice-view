@@ -1,0 +1,107 @@
+.main {
+  background-color: $colorBackground;
+}
+
+.philosophy {
+  background-color: $colorBackground;
+  margin: 60px 0;
+  background-image: url(./../images/philosophy/background/background-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 677px;
+}
+
+.philosophy__content {
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+.philosophy__about {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 398px;
+  max-width: 320px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.details__list {
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-basis: calc((100% - 20px) / 2);
+  justify-content: center;
+  align-items: center;
+}
+
+.details__text {
+  width: 130px;
+}
+
+.details__text::before {
+  content: '';
+  display: block;
+  height: 32px;
+  margin-bottom: 24px;
+  background-repeat: no-repeat;
+}
+
+.details__text--valise::before {
+  background-image: url(../images/philosophy/details/valise.svg);
+}
+.details__text--graphic::before {
+  background-image: url(../images/philosophy/details/graphic.svg);
+}
+
+.details__text--house::before {
+  background-image: url(../images/philosophy/details/house.svg);
+}
+
+.details__text--award::before {
+  background-image: url(../images/philosophy/details/award.svg);
+}
+
+.details__text {
+  font-size: 16px;
+}
+
+.phylosophy__company {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.phylosophy__title {
+  color: $colorTextSecondary;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.philosophy__text {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+// ..........................TABLET VERSION .....................
+
+@media screen and (min-width: 480px) {
+}
+.philosophy {
+  background-image: url(./../images/philosophy/background/background-tablet.jpg);
+}
+
+// ..........................TABLET DESKTOP .....................
+
+@media screen and (min-width: 1080px) {
+}
+.philosophy {
+  background-image: url(./../images/philosophy/background/background-desktop.jpg);
+}
