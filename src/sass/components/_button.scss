@@ -5,12 +5,15 @@
   color: $colorBgPrimary;
   border-radius: 16px;
   padding: 14px 28px;
-  transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease,
+    background-color 0.3s ease;
   &:hover {
+    cursor: pointer;
     background-color: $colorBgPrimary;
     color: $colorTextPrimary;
     border: 1px solid $colorTextPrimary;
-    transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    transition: border-color 0.3s ease, color 0.3s ease,
+      background-color 0.3s ease;
   }
 }
 
@@ -26,5 +29,6 @@
     background-color: $colorTextPrimary;
     color: $colorBgPrimary;
     border: 1px solid transparent;
+    cursor: pointer;
   }
 }
