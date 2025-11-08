@@ -2,8 +2,9 @@
   position: relative;
   display: block;
   z-index: 9;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
+  padding: 4px 3px;
   background: none;
 }
 
@@ -16,7 +17,7 @@
 .menu-btn::after {
   width: 100%;
   height: 2px;
-  background-color: #030303;
+  background-color: $colorText;
   position: absolute;
   left: 0;
   transition: 0.5s linear;
@@ -36,7 +37,7 @@
 .menu-btn.is-open {
   &::before {
     top: calc(50% - 1px);
-    transform: rotate(0deg);
+    transform: rotate(45deg);
   }
   .menu-btn__line {
     transform-origin: top;
@@ -44,11 +45,11 @@
   }
   &::after {
     top: calc(50% - 1px);
-    transform: rotate(90deg);
+    transform: rotate(-45deg);
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .menu-btn {
     display: none;
   }

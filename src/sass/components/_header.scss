@@ -11,57 +11,76 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 .logo {
   min-width: 36px;
   min-height: 28px;
   cursor: pointer;
 }
-.nav {
+.nav__list {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 .nav__link {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   font-family: $fontSecondary;
-  color: $colorBgPrimary;
+  color: $colorText;
 }
-
-@media (min-width: 768px) {
+.nav__btn {
+  display: none;
+}
+@media screen and (min-width: 768px) {
   .header {
     padding-top: 22px;
     padding-bottom: 22px;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
   .logo {
     min-width: 56px;
     min-height: 56px;
     padding: 8.5px 13px;
   }
-  .nav {
-    display: flex;
+  .nav__list {
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
   }
-  .nav__list {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
+  .logo {
+    min-width: 56px;
+    min-height: 56px;
+    padding: 8.5px 13px;
   }
-  .nav__link {
-    font-size: 20px;
-    font-weight: 400;
-    font-family: 'Jost', sans-serif;
-    line-height: 1.57;
-    $colorTextTitle: #292f36;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: ease;
-    &:hover {
-      color: $colorAccent;
-    }
+  .nav__list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .nav__btn {
+    display: block;
   }
 }

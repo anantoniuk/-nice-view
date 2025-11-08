@@ -5,12 +5,14 @@
   color: $colorBgPrimary;
   border-radius: 16px;
   padding: 14px 28px;
-  transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease,
+    background-color 0.3s ease;
   &:hover {
     background-color: $colorBgPrimary;
     color: $colorTextPrimary;
     border: 1px solid $colorTextPrimary;
-    transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    transition: border-color 0.3s ease, color 0.3s ease,
+      background-color 0.3s ease;
   }
 }
 
@@ -26,5 +28,27 @@
     background-color: $colorTextPrimary;
     color: $colorBgPrimary;
     border: 1px solid transparent;
+  }
+}
+
+.button--transparent {
+  border-radius: 8px;
+  padding: 8px 30px;
+  border: 1px solid $colorText;
+  font-weight: 300;
+  font-size: 16px;
+  color: $colorText;
+  background-color: transparent;
+  &:hover {
+    background-color: $colorText;
+    color: $colorTextSecondary;
+    border: 1px solid transparent;
+  }
+}
+
+@media screen and (min-width: 704px) {
+  .button--invert {
+    padding: 9px 62px;
+    font-size: 24px;
   }
 }
