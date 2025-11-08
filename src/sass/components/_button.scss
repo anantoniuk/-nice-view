@@ -32,3 +32,25 @@
     cursor: pointer;
   }
 }
+
+.button--transparent {
+  border-radius: 8px;
+  padding: 8px 30px;
+  border: 1px solid $colorText;
+  font-weight: 300;
+  font-size: 16px;
+  color: $colorText;
+  background-color: transparent;
+  &:hover {
+    background-color: $colorText;
+    color: $colorTextSecondary;
+    border: 1px solid transparent;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button--invert {
+    padding: 9px 62px;
+    font-size: 24px;
+  }
+}

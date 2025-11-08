@@ -1,4 +1,4 @@
-// import './js/mobile-menu';
+import './js/mobile-menu';
 import './js/modal-hero';
 // import './js/flat-information';
 // import './js/pop-up';
