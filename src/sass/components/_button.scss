@@ -8,6 +8,7 @@
   transition: border-color 0.3s ease, color 0.3s ease,
     background-color 0.3s ease;
   &:hover {
+    cursor: pointer;
     background-color: $colorBgPrimary;
     color: $colorTextPrimary;
     border: 1px solid $colorTextPrimary;
@@ -28,6 +29,7 @@
     background-color: $colorTextPrimary;
     color: $colorBgPrimary;
     border: 1px solid transparent;
+    cursor: pointer;
   }
 }
 
