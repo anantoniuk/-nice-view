@@ -1,0 +1,73 @@
+.infrastructure {
+  position: relative;
+  padding: 60px 0;
+
+  &__container {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  &__bgfoto {
+    background-image: url(../../img/infrastructure.jpg) cover no-repeat;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(2px);
+    }
+  }
+  &__details {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  &__supermarket,
+  &__details > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &:nth-child(1) {
+      align-self: flex-start;
+    }
+
+    &:nth-child(2) {
+      align-self: center;
+    }
+
+    &:nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+  &__circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid var($colorTextSecondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__time {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: var($colorTextSecondary);
+    line-height: 1.2;
+  }
+  &__locations {
+    font-weight: 500;
+    text-align: left;
+  }
+}
