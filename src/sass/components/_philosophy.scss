@@ -20,7 +20,7 @@
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  max-height: 398px;
+  // max-height: 398px;
   max-width: 320px;
 }
 
@@ -33,7 +33,7 @@
 
 .details__list {
   display: flex;
-  // flex-direction: column;
+
   flex-wrap: wrap;
   gap: 20px;
   flex-basis: calc((100% - 20px) / 2);
@@ -72,14 +72,14 @@
   font-size: 16px;
 }
 
-.phylosophy__company {
+.philosophy__company {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.phylosophy__title {
+.philosophy__title {
   color: $colorTextSecondary;
   font-size: 16px;
   font-weight: 300;
@@ -92,16 +92,85 @@
 
 // ..........................TABLET VERSION .....................
 
-@media screen and (min-width: 480px) {
-}
-.philosophy {
-  background-image: url(./../images/philosophy/background/background-tablet.jpg);
-}
+@media screen and (min-width: 768px) {
+  .philosophy {
+    background-image: url(./../images/philosophy/background/background-tablet.jpg);
+  }
 
-// ..........................TABLET DESKTOP .....................
+  .philosophy__about {
+    flex-direction: row;
+    max-height: 324px;
+    max-width: 768px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-@media screen and (min-width: 1080px) {
+  .details {
+    margin-right: 32px;
+  }
+
+  .details__list {
+    flex-basis: calc((100% - 32px) / 2);
+    gap: 32px;
+    flex-wrap: wrap;
+    min-width: 336px;
+    display: flex;
+  }
+
+  // .details__list {
+  //   min-width: 336px;
+  //   gap: 20px;
+  //   flex-basis: calc((100% - 32px) / 2);
+  // }
+
+  .philosophy__company {
+    gap: 16px;
+    margin-top: 76px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .philosophy__title {
+    font-size: 24px;
+  }
+
+  .philosophy__text {
+    font-size: 16px;
+  }
 }
-.philosophy {
-  background-image: url(./../images/philosophy/background/background-desktop.jpg);
+// ..........................DESKTOP VERSION .....................
+
+@media screen and (min-width: 1280px) {
+  .philosophy {
+    background-image: url(./../images/philosophy/background/background-desktop.jpg);
+  }
+
+  .philosophy__about {
+    min-height: 340px;
+    min-width: 1012px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .details__list {
+    flex-wrap: wrap;
+    display: flex;
+    flex-basis: calc((100% - 72px) / 2);
+    min-width: 393px;
+    gap: 72px;
+  }
+
+  .details__text {
+    width: 100%;
+  }
+
+  .philosophy__company {
+    margin-top: 96px;
+  }
+
+  .philosophy__text {
+    font-size: 16px;
+  }
 }
