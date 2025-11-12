@@ -1,27 +1,23 @@
 .philosophy {
   background-color: $colorBackground;
-  margin: 60px 0;
+  padding: 60px 0;
+}
+
+.philosophy__content {
   background-image: url(./../images/philosophy/background/background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 677px;
-}
-
-.philosophy__content {
-  background-color: rgb(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 280px;
 }
 
-.philosophy__about {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  // max-height: 398px;
-  max-width: 320px;
+.philosophy__top {
+  background-color: rgb(255, 255, 255, 0.9);
+  flex-grow: 1;
+  padding: 20px 0;
 }
 
 .details {
@@ -36,13 +32,12 @@
 
   flex-wrap: wrap;
   gap: 20px;
-  flex-basis: calc((100% - 20px) / 2);
 
   align-items: center;
 }
 
-.details__text {
-  width: 130px;
+.details__item {
+  flex-basis: calc((100% - 20px) / 2);
 }
 
 .details__text::before {
@@ -95,12 +90,12 @@
 @media screen and (min-width: 768px) {
   .philosophy {
     background-image: url(./../images/philosophy/background/background-tablet.jpg);
+    padding-bottom: 306px;
   }
 
   .philosophy__about {
     flex-direction: row;
-    max-height: 324px;
-    max-width: 768px;
+    align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -125,7 +120,7 @@
 
   .philosophy__company {
     gap: 16px;
-    margin-top: 76px;
+
     display: flex;
     flex-wrap: wrap;
   }
@@ -143,11 +138,10 @@
 @media screen and (min-width: 1280px) {
   .philosophy {
     background-image: url(./../images/philosophy/background/background-desktop.jpg);
+    padding-bottom: 290px;
   }
 
   .philosophy__about {
-    min-height: 340px;
-    min-width: 1012px;
     display: flex;
     flex-direction: row;
     padding-top: 44px;
@@ -157,17 +151,14 @@
   .details__list {
     flex-wrap: wrap;
     display: flex;
-    flex-basis: calc((100% - 72px) / 2);
+    // flex-basis: calc((100% - 72px) / 2);
+    flex-basis: calc((100% - 32px) / 2);
     min-width: 393px;
     gap: 72px;
   }
 
   .details__text {
     width: 100%;
-  }
-
-  .philosophy__company {
-    margin-top: 96px;
   }
 
   .philosophy__text {
