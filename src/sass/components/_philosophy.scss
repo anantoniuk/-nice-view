@@ -4,7 +4,7 @@
 }
 
 .philosophy__content {
-  background-image: url(./../images/philosophy/background/background-mobile.jpg);
+  background-image: url(../images/philosophy/background/background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,6 +12,11 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 280px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: url(../images/philosophy/background/background-mobile@2x.jpg);
+  }
 }
 
 .philosophy__top {
@@ -29,11 +34,9 @@
 
 .details__list {
   display: flex;
-
   flex-wrap: wrap;
-  gap: 20px;
-
   align-items: center;
+  gap: 20px;
 }
 
 .details__item {
@@ -89,12 +92,22 @@
 
 @media screen and (min-width: 768px) {
   .philosophy {
-    background-image: url(./../images/philosophy/background/background-tablet.jpg);
+    padding: 100px 0;
+  }
+
+  .philosophy__content {
+    background-image: url(../images/philosophy/background/background-tablet.jpg);
     padding-bottom: 306px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../images/philosophy/background/background-tablet@2x.jpg);
+    }
   }
 
   .philosophy__about {
-    flex-direction: row;
+    display: flex;
+    gap: 32px;
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -105,22 +118,18 @@
   }
 
   .details__list {
-    flex-basis: calc((100% - 32px) / 2);
     gap: 32px;
     flex-wrap: wrap;
     min-width: 336px;
     display: flex;
   }
 
-  // .details__list {
-  //   min-width: 336px;
-  //   gap: 20px;
-  //   flex-basis: calc((100% - 32px) / 2);
-  // }
+  .details__item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
 
   .philosophy__company {
     gap: 16px;
-
     display: flex;
     flex-wrap: wrap;
   }
@@ -137,8 +146,17 @@
 
 @media screen and (min-width: 1280px) {
   .philosophy {
-    background-image: url(./../images/philosophy/background/background-desktop.jpg);
+    padding-bottom: 100px;
+  }
+
+  .philosophy__content {
+    background-image: url(../images/philosophy/background/background-desktop.jpg);
     padding-bottom: 290px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../images/philosophy/background/background-desktop@2x.jpg);
+    }
   }
 
   .philosophy__about {
@@ -151,10 +169,13 @@
   .details__list {
     flex-wrap: wrap;
     display: flex;
-    // flex-basis: calc((100% - 72px) / 2);
-    flex-basis: calc((100% - 32px) / 2);
+
     min-width: 393px;
     gap: 72px;
+  }
+
+  .details__item {
+    flex-basis: calc((100% - 72px) / 2);
   }
 
   .details__text {
