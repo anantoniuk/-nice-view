@@ -146,7 +146,7 @@
 
 @media screen and (min-width: 1280px) {
   .philosophy {
-    padding-bottom: 100px;
+    padding: 100px 0;
   }
 
   .philosophy__content {
@@ -164,22 +164,22 @@
     flex-direction: row;
     padding-top: 44px;
     padding-bottom: 44px;
+    gap: 122px;
   }
 
   .details__list {
     flex-wrap: wrap;
     display: flex;
-
-    min-width: 393px;
-    gap: 72px;
+    row-gap: 92px;
+    column-gap: 72px;
   }
 
   .details__item {
     flex-basis: calc((100% - 72px) / 2);
   }
 
-  .details__text {
-    width: 100%;
+  .philosophy__company {
+    flex-basis: 400px;
   }
 
   .philosophy__text {
