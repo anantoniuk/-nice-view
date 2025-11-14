@@ -1,0 +1,58 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~modal~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+// mobile and tablet-------------------
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  inset: 0;
+}
+.backdrop.is-hidden-pop {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  min-height: 609px;
+  width: calc(100dvw - 30px);
+  max-width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+.backdrop.is-hidden-pop .modal {
+  transform: translateX(-50%) translateY(-50%) scale(0.5);
+}
+.modal__btn-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  padding: 6px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  &:hover .icon__close,
+  &:hover {
+    cursor: pointer;
+  }
+}
+.icon__close {
+  width: 18px;
+  height: 18px;
+}
+.no__scroll-pop {
+  overflow: hidden;
+}
+
+// desktop-------------------
+@media screen and (min-width: 1024px) {
+  .modal {
+    min-height: 581px;
+    min-width: 528px;
+  }
+  .modal__title {
+    max-width: 448px;
+    line-height: 1.15;
+  }
+}

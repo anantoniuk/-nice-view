@@ -1,6 +1,6 @@
 <section class="apartment">
   <div class="apartment__container container">
-    <h2 class="apartment__tittle" >Choose your apartment</h2>
+    <h2 class="apartment__tittle">Choose your apartment</h2>
     <div class="apartment__wrap">
       <article class="apartment__card apartment__card--first">
         <div class="apartment__photo">
@@ -45,6 +45,38 @@
       </article>
     </div>
 
-    <button class="button apartment__button">Download catalog</button>
+    <button class="button apartment__button" type="button" data-modal-pop-open>
+      Download catalog
+    </button>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="backdrop is-hidden-pop" data-modal-pop>
+      <div class="modal-pop">
+        <button class="modal__btn-close--pop" data-modal-pop-close>
+          <svg class="icon__close--pop">
+            <use href="#" />
+          </svg>
+        </button>
+        <div class="modal__phoyo--pop">
+          <img src="./images/apartment/pop-up.png" alt="person" />
+        </div>
+        <div class="modal__meta--pop">
+          <h3 class="modal__title--pop">Download the catalog</h3>
+          <p class="modal__text--pop">
+            We will send you more photos, videos and information by mail
+          </p>
+          <form class="form__field--pop" tabindex="1" action="#">
+            <div class="field__meta--pop">
+              <input
+                class="field__input--pop"
+                type="email"
+                placeholder="EMAIL ADRESS"
+              />
+            </div>
+            <button class="field__button--pop" type="submit">#</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   </div>
 </section>
