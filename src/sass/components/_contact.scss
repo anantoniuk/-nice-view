@@ -128,14 +128,16 @@ padding: 9px 46px;
 
   .contact__adress {
     display: flex;
-    flex-direction: row;
     gap: 68px;
+    flex-direction: row;
+    
   }
 }
 @media (min-width: 1280px) {
 .contact__container {
 
   gap: 20px;
+
 }
   }
 
