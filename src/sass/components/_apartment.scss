@@ -1,4 +1,6 @@
+
 .apartment {
+      background-color: $colorBgPrimary;
   &__container {
     padding-top: 24px;
     padding-bottom: 32px;
@@ -7,6 +9,12 @@
     align-items: center;
     flex-direction: column;
     gap: 28px;
+
+       
+       
+ 
+
+
   }
   &__wrap {
     display: flex;
