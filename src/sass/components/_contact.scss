@@ -91,7 +91,6 @@
   color: $colorTextSecondary;
 
   font-weight: 300;
- 
 }
 
 .contact__button:hover {
@@ -103,9 +102,8 @@
 
 @media (min-width: 768px) {
   .contact__container {
-
-  gap: 24px;
-}
+    gap: 24px;
+  }
   .contact__adress {
     padding: 53px 70px;
   }
@@ -122,22 +120,18 @@
   .contact__button {
     color: $colorTextPrimary;
     font-weight: 300;
-font-size: 24px;
-padding: 9px 46px;
+    font-size: 24px;
+    padding: 9px 46px;
   }
 
   .contact__adress {
     display: flex;
     gap: 68px;
     flex-direction: row;
-    
   }
 }
 @media (min-width: 1280px) {
-.contact__container {
-
-  gap: 20px;
-
-}
+  .contact__container {
+    gap: 20px;
   }
-
+}
