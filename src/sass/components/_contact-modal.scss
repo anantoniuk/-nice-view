@@ -19,12 +19,12 @@
     }
   }
 
-  &:not(.is__hidden-hero) .modal {
+  &:not(.is__hidden-contact) .modal {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
 }
-.backdrop.is__hidden-hero {
+.backdrop.is-hidden-contact {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -74,7 +74,7 @@
   }
 }
 
-.no__scroll-hero {
+.no__scroll-contact {
   overflow: hidden;
 }
 .modal__content {
@@ -153,14 +153,13 @@ input:focus::placeholder {
 @media screen and (min-width: 768px) {
   .modal {
     padding: 60px;
-     &__title {
-  
-font-size: 28px;
-text-align: center;
-     min-width: 410px;
+    &__title {
+      font-size: 28px;
+      text-align: center;
+      min-width: 410px;
+    }
   }
-  }
-  .modal__form{
+  .modal__form {
     min-width: 410px;
   }
 }
