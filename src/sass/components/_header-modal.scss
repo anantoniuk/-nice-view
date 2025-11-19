@@ -19,12 +19,12 @@
     }
   }
 
-  &:not(.is-hidden-hero) .modal {
+  &:not(.is-hidden-header) .modal {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
 }
-.backdrop.is-hidden-hero {
+.backdrop.is-hidden-header {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -74,7 +74,7 @@
   }
 }
 
-.no__scroll-hero {
+.no__scroll-header {
   overflow: hidden;
 }
 .modal__content {
