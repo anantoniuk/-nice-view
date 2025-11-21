@@ -1,6 +1,6 @@
 .infrastructure {
-  position: relative;
   padding: 60px 0;
+  position: relative;
 
   &__container {
     max-width: 480px;
@@ -11,63 +11,76 @@
   &__title {
     font-size: 28px;
     font-weight: 500;
+    margin-bottom: 24px;
   }
+
   &__bgfoto {
-    background-image: url(../../img/infrastructure.jpg) cover no-repeat;
+    background-image: url('../../img/infrastructure.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 20px;
     position: relative;
-    overflow: hidden;
-    &::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(2px);
-    }
   }
+
   &__details {
-    position: relative;
-    z-index: 1;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+    border-radius: 16px;
+
+    max-width: 340px;
+    max-height: 420px;
+
+    padding: 30px 20px;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     gap: 24px;
-    align-items: flex-start;
   }
-  &__supermarket,
-  &__details > div {
+
+  &__item {
     display: flex;
     align-items: center;
     gap: 12px;
 
-    &:nth-child(1) {
-      align-self: flex-start;
-    }
-
     &:nth-child(2) {
-      align-self: center;
+      .infrastructure__circle {
+        order: 2;
+      }
+      .infrastructure__locations {
+        order: 1;
+      }
     }
+  }
 
-    &:nth-child(3) {
-      align-self: flex-end;
-    }
-  }
   &__circle {
-    width: 100px;
-    height: 100px;
-    border: 2px solid var($colorTextSecondary);
+    width: 86px;
+    height: 86px;
+    border: 2px solid var(--colorTextSecondary);
     border-radius: 50%;
+
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-  }
-  &__time {
+    align-items: center;
+
     font-weight: 600;
     font-size: 14px;
-    text-align: center;
-    color: var($colorTextSecondary);
-    line-height: 1.2;
+    color: var(--colorTextSecondary);
+    line-height: 1.1;
   }
+
+  &__time {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
   &__locations {
     font-weight: 500;
+    max-width: 140px;
     text-align: left;
+    line-height: 1.2;
   }
 }
