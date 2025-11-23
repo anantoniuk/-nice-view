@@ -1,50 +1,231 @@
-<section class="apartment">
+<section id="apartment" class="apartment">
   <div class="apartment__container container">
-    <h2 class="apartment__tittle" >Choose your apartment</h2>
-    <div class="apartment__wrap">
-      <article class="apartment__card apartment__card--first">
+    <h2 class="apartment__tittle">Choose your apartment</h2>
+    <div class="apartment__wrap" data-modal-open>
+      <article
+        class="apartment__card apartment__card--first"
+        data-houseName="House 1"
+      >
         <div class="apartment__photo">
-          <img
-            src="./images/apartment/first-apartment.webp"
-            alt="apartment-img"
-            class="apartment__img img"
-          />
-          <hgroup class="apartment__hgroup hgroup">
-            <h3 class="apartment__subtitle">Type 1</h3>
-            <p class="apartment__text">total area 23 meters</p>
-          </hgroup>
+          <picture>
+            <source
+              srcset="
+                ./images/apartment/first-apartment.webp    1x,
+                ./images/apartment/first-apartment@2x.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/apartment/first-apartment.png    1x,
+                ./images/apartment/first-apartment@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="./images/apartment/first-apartment.webp"
+              alt="apartment-img"
+              class="apartment__img img"
+            />
+          </picture>
         </div>
+        <hgroup class="apartment__hgroup hgroup">
+          <h3 class="apartment__subtitle">Type 1</h3>
+          <p class="apartment__text">total area 23 meters</p>
+        </hgroup>
       </article>
 
-      <article class="apartment__card apartment__card--second">
-        <div class="apartment__photo">
-          <img
-            src="./images/apartment/second-apartment.webp"
-            alt="apartment-img"
-            class="apartment__img img"
-          />
-          <hgroup class="apartment__hgroup hgroup">
-            <h2 class="apartment__subtitle">Type 2</h2>
-            <p class="apartment__text">total area 27 meters</p>
-          </hgroup>
-        </div>
-      </article>
+      <div class="backdrop is-hidden-apartment" data-modal>
+        <div class="modal modal--apartment">
+          <button class="btn-close" data-modal-close>
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.48533 6.6L15.0853 0L16.9707 1.88533L10.3707 8.48533L16.9707 15.0853L15.0853 16.9707L8.48533 10.3707L1.88533 16.9707L0 15.0853L6.6 8.48533L0 1.88533L1.88533 0L8.48533 6.6Z"
+                fill="#35322D"
+              />
+            </svg>
+          </button>
+          <div class="modal__content modal__content--apartment">
+            <h3 class="modal__title modal__title--apartment" data-modalTitle>
+              House 1
+            </h3>
+            <div class="modal__meta--apartment">
+              <div class="modal__photo modal__photo--apartment">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/apartment/first-apartment-modal.webp    1x,
+                      ./images/apartment/first-apartment-modal@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
 
-      <article class="apartment__card apartment__card--third">
-        <div class="apartment__photo">
-          <img
-            src="./images/apartment/third-apartment.webp"
-            alt="apartment-img"
-            class="apartment__img img"
-          />
-          <hgroup class="apartment__hgroup hgroup">
-            <h2 class="apartment__subtitle">Type 3</h2>
-            <p class="apartment__text">total area 31 meters</p>
-          </hgroup>
+                  <source
+                    srcset="
+                      ./images/apartment/first-apartment-modal.png    1x,
+                      ./images/apartment/first-apartment-modal@2x.png 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    src="./images/apartment/first-apartment-modal.webp"
+                    alt="flat-img"
+                    class="modal__img modal__img--apartment img"
+                  />
+                </picture>
+              </div>
+              <div class="modal__info--apartment">
+                <p class="modal__text modal__text--apartment">
+                  Total area:
+                  <span class="modal_span modal__span--apartment">50.2 m2</span>
+                </p>
+                <p class="modal__text modal__text--apartment">
+                  Rooms:
+                  <span class="modal_span modal__span--apartment">1</span>
+                </p>
+                <p class="modal__text modal__text--apartment">
+                  from 1000 dol/m2
+                </p>
+                <p class="modal__text modal__text--apartment">
+                  about 50 200 dollars
+                </p>
+                <button type="submit" class="modal__button--apartment">
+                  Contact us
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <article
+        class="apartment__card apartment__card--second"
+        data-houseName="House 2"
+      >
+        <div class="apartment__photo">
+          <picture>
+            <source
+              srcset="
+                ./images/apartment/second-apartment.webp    1x,
+                ./images/apartment/second-apartment@2x.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/apartment/second-apartment.png    1x,
+                ./images/apartment/second-apartment@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="./images/apartment/second-apartment.webp"
+              alt="apartment-img"
+              class="apartment__img img"
+            />
+          </picture>
+        </div>
+
+        <hgroup class="apartment__hgroup hgroup">
+          <h2 class="apartment__subtitle">Type 2</h2>
+          <p class="apartment__text">total area 27 meters</p>
+        </hgroup>
+      </article>
+      <article
+        class="apartment__card apartment__card--third"
+        data-houseName="House 3"
+      >
+        <div class="apartment__photo">
+          <picture>
+            <source
+              srcset="
+                ./images/apartment/third-apartment.webp    1x,
+                ./images/apartment/third-apartment@2x.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/apartment/third-apartment.png    1x,
+                ./images/apartment/third-apartment@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="./images/apartment/third-apartment.webp"
+              alt="apartment-img"
+              class="apartment__img img"
+            />
+          </picture>
+        </div>
+
+        <hgroup class="apartment__hgroup hgroup">
+          <h2 class="apartment__subtitle">Type 3</h2>
+          <p class="apartment__text">total area 31 meters</p>
+        </hgroup>
       </article>
     </div>
-
-    <button class="button apartment__button">Download catalog</button>
+    <button class="button apartment__button" type="button" data-modal-pop-open>
+      Download catalog
+    </button>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="backdrop is-hidden-pop" data-modal-pop>
+      <div class="modal-pop">
+        <button class="modal__btn-close--pop" data-modal-pop-close>
+          <svg
+            class="icon__close--pop"
+            width="15"
+            height="15"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.48533 6.6L15.0853 0L16.9707 1.88533L10.3707 8.48533L16.9707 15.0853L15.0853 16.9707L8.48533 10.3707L1.88533 16.9707L0 15.0853L6.6 8.48533L0 1.88533L1.88533 0L8.48533 6.6Z"
+              fill="#7E6D53"
+            />
+          </svg>
+        </button>
+        <div class="modal__photo--pop">
+          <img
+            class="modal__img--pop"
+            src="./images/apartment/pop-up.png"
+            alt="person"
+          />
+        </div>
+        <div class="modal__meta--pop">
+          <h3 class="modal__title--pop">Download the catalog</h3>
+          <p class="modal__text--pop">
+            We will send you more photos, videos and information by mail
+          </p>
+          <form class="form__field--pop" tabindex="1" action="#">
+            <div class="field__meta--pop">
+              <input
+                class="field__input--pop"
+                type="email"
+                placeholder="EMAIL ADRESS"
+              />
+            </div>
+            <button class="field__button--pop" type="submit">
+              <img
+                class="icon__input"
+                src="./images/apartment/input-arrow.svg"
+                alt=""
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   </div>
 </section>

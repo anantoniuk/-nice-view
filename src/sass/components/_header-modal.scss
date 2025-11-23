@@ -19,12 +19,12 @@
     }
   }
 
-  &:not(.is-hidden-hero) .modal {
+  &:not(.is-hidden-header) .modal {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
 }
-.backdrop.is-hidden-hero {
+.backdrop.is-hidden-header {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -74,7 +74,7 @@
   }
 }
 
-.no__scroll-hero {
+.no__scroll-header {
   overflow: hidden;
 }
 .modal__content {
@@ -148,19 +148,4 @@ input::placeholder {
 
 input:focus::placeholder {
   color: transparent;
-}
-
-@media screen and (min-width: 768px) {
-  .modal {
-    padding: 60px;
-     &__title {
-  
-font-size: 28px;
-text-align: center;
-     min-width: 410px;
-  }
-  }
-  .modal__form{
-    min-width: 410px;
-  }
 }

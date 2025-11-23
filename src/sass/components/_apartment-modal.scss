@@ -1,0 +1,117 @@
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    .modal {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+
+  &:not(.is-hidden-apartment) .modal {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+.backdrop.is-hidden-apartment {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.btn-close {
+  position: absolute;
+  background-color: #fcfcfb;
+  top: 16px;
+  right: 16px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.no__scroll-apartment {
+  overflow: hidden;
+}
+
+.modal {
+  border-radius: 0;
+  padding: 40px 32px;
+  &__title--apartment {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+  }
+  &__content {
+    display: inline-block;
+    text-align: left;
+  }
+  &__info--apartment {
+    font-weight: 300;
+    font-size: 20px;
+    color: #2d2a22;
+    gap: 4;
+    margin-top: 18px;
+  }
+
+  &__text--apartment:nth-child(3) {
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    color: #7e6d53;
+  }
+
+  &__span--apartment {
+    font-weight: 400;
+    color: #7e6d53;
+  }
+
+  &__button--apartment {
+    //    width: 192px;
+    // height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fcfcfb;
+    border-radius: 8px;
+    padding: 12px 52px;
+    background-color: #7e6d53;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid transparent;
+    margin-top: 22px;
+    &:hover {
+      border: 1px solid #7e6d53;
+      background-color: #fcfcfb;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      color: #7e6d53;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .modal--apartment {
+    min-width: 612px;
+  }
+  .modal__content {
+    display: flex;
+    align-items: center;
+  }
+  .modal__meta--apartment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .modal__title--apartment {
+    margin-bottom: 0;
+  }
+}
