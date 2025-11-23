@@ -1,0 +1,89 @@
+.infrastructure {
+  padding: 60px 0;
+  position: relative;
+
+  &__container {
+    max-width: 320px;
+    max-height: 480;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  &__bgfoto {
+    background-image: url('./../img/infrastructure.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 20px;
+    position: relative;
+  }
+
+  &__details {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+    border-radius: 16px;
+
+    max-width: 280px;
+    max-height: 351px;
+
+    padding: 24px 0 0 18px;
+    margin: 0 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__supermarket {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  &__supermarket-second {
+    &__circle-second {
+      order: 2;
+    }
+    &__locations-second {
+      order: 1;
+      text-align: left;
+    }
+  }
+
+  &__circle {
+    width: 101px;
+    height: 101px;
+    border: 1px solid $colorTextSecondary;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 14px;
+    color: $colorTextSecondary;
+    line-height: 1.1;
+  }
+
+  &__time {
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 72px;
+  }
+
+  &__locations {
+    font-weight: 500;
+    max-width: 140px;
+    text-align: left;
+    line-height: 1.2;
+  }
+}
