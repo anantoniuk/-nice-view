@@ -1,0 +1,140 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms ease;
+}
+
+.backdrop.is-hidden-pop {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-pop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms ease;
+  min-height: 208px;
+  max-width: 300px;
+  padding: 28px 42px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 70px;
+}
+.backdrop.is-hidden-pop .modal-pop {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal__btn-close--pop {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon__close--pop {
+  width: 18px;
+  height: 18px;
+  transition: transform 150ms ease;
+}
+
+.modal__img--pop {
+  min-width: 112px;
+}
+.modal__meta--pop {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.modal__title--pop {
+  font-size: 19px;
+  font-weight: 600;
+  color: $colorTextPrimary;
+}
+.modal__text--pop {
+  font-size: 19px;
+  font-weight: 300;
+  max-width: 249px;
+}
+.form__field--pop {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 220px;
+  border: 2px solid $colorTextPrimary;
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 32px;
+  background-color: transparent;
+}
+.field__meta--pop {
+  flex: 1;
+}
+.field__input--pop {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  color: $colorTextSecondary;
+}
+.field__input--pop::placeholder {
+  color: #000;
+  opacity: 0.3;
+}
+.field__button--pop {
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+}
+
+.no__scroll-pop {
+  overflow: hidden;
+}
+// desktop-------------------
+@media screen and (min-width: 768px) {
+  .modal-pop {
+    max-width: 562px;
+    flex-direction: row;
+  }
+  .backdrop.is-hidden-pop .modal-pop {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  .modal__title--pop {
+    font-size: 16px;
+  }
+  .modal__text--pop {
+    font-size: 16px;
+  }
+  .form__field--pop {
+    min-width: 296px;
+  }
+  .field__input--pop {
+    font-size: 10px;
+  }
+}
