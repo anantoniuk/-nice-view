@@ -3,7 +3,8 @@
   position: relative;
 
   &__container {
-    max-width: 480px;
+    max-width: 320px;
+    max-height: 480;
     margin: 0 auto;
     text-align: center;
   }
@@ -12,10 +13,12 @@
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 24px;
+    margin-left: 20px;
+    text-align: left;
   }
 
   &__bgfoto {
-    background-image: url('../../img/infrastructure.jpg');
+    background-image: url('./../img/infrastructure.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,36 +31,36 @@
     backdrop-filter: blur(2px);
     border-radius: 16px;
 
-    max-width: 320px;
-    max-height: 497px;
+    max-width: 280px;
+    max-height: 351px;
 
-    padding: 30px 20px;
-    margin: 0 auto;
+    padding: 24px 0 0 18px;
+    margin: 0 0;
 
     display: flex;
     flex-direction: column;
-    gap: 24px;
   }
 
-  &__item {
+  &__supermarket {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 7px;
+  }
 
-    &:nth-child(2) {
-      .infrastructure__circle {
-        order: 2;
-      }
-      .infrastructure__locations {
-        order: 1;
-      }
+  &__supermarket-second {
+    &__circle-second {
+      order: 2;
+    }
+    &__locations-second {
+      order: 1;
+      text-align: left;
     }
   }
 
   &__circle {
     width: 101px;
     height: 101px;
-    border: 2px solid var(--colorTextSecondary);
+    border: 1px solid $colorTextSecondary;
     border-radius: 50%;
 
     display: flex;
@@ -67,14 +70,14 @@
 
     font-weight: 600;
     font-size: 14px;
-    color: var(--colorTextSecondary);
+    color: $colorTextSecondary;
     line-height: 1.1;
   }
 
   &__time {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 72px;
   }
 
   &__locations {
