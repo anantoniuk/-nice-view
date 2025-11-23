@@ -1,0 +1,137 @@
+.contact__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.contact__hgroup {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: $colorTextPrimary;
+}
+.contact__icon {
+  width: 24px;
+  height: 24px;
+  stroke: $colorBgPrimary;
+
+  fill: none;
+}
+.contact__title {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.contact__text {
+  font-weight: 300;
+  font-size: 20px;
+  color: $colorTextPrimary;
+}
+
+.contact__adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  background: $colorTextPrimary;
+  border-radius: 16px;
+  padding: 20px 24px;
+}
+
+.adress__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-weight: 300;
+  font-size: 14px;
+  color: $colorText;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.adress__item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.adress__text,
+.adress__link {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+}
+
+.contact__button {
+  border-radius: 8px;
+  padding: 14px 76px;
+  width: 240px;
+  height: 48px;
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 1;
+  background: $colorBgPrimary;
+  color: $colorTextSecondary;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 8px;
+  padding: 0px 0px;
+  color: $colorTextSecondary;
+
+  font-weight: 300;
+}
+
+.contact__button:hover {
+  border: 1px solid $colorBgPrimary;
+  background-color: $colorTextPrimary;
+  color: $colorBgPrimary;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .contact__container {
+    gap: 24px;
+  }
+  .contact__adress {
+    padding: 53px 70px;
+  }
+
+  .contact__title {
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  .contact__text {
+    font-weight: 300;
+    font-size: 24px;
+  }
+  .contact__button {
+    color: $colorTextPrimary;
+    font-weight: 300;
+    font-size: 24px;
+    padding: 9px 46px;
+  }
+
+  .contact__adress {
+    display: flex;
+    gap: 68px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1280px) {
+  .contact__container {
+    gap: 20px;
+  }
+}

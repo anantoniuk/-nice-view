@@ -1,0 +1,101 @@
+.apartment {
+  background-color: $colorBgPrimary;
+  &__container {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 20px;
+    border: 2px solid transparent;
+    width: 280px;
+    transition: border-color 0.3s ease, color 0.3s ease,
+      background-color 0.3s ease, transform 0.3s ease;
+
+    border-radius: 16px;
+    &:hover {
+      border: solid 2px $colorTextPrimary;
+      transition: border-color 0.3s ease, color 0.3s ease,
+        background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+      transform: translateY(-10px);
+    }
+  }
+
+  &__tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 500;
+    max-width: 270px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__subtitle {
+    font-size: 28px;
+    color: $colorTextSecondary;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  &__text {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  &__hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  &__button {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .apartment {
+    &__tittle {
+      max-width: 484px;
+    }
+    &__wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 32px;
+      max-width: 704px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .apartment {
+    &__wrap {
+      display: flex;
+      align-items: center;
+
+      gap: 110px;
+      flex-wrap: nowrap;
+    }
+    &__card {
+      min-width: 360px;
+    }
+  }
+}
