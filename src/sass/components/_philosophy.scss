@@ -4,7 +4,7 @@
 }
 
 .philosophy__content {
-  background-image: url(../images/philosophy/background/background-mobile.jpg);
+  background-image: url(./../images/philosophy/background/background-mobile.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,7 +15,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-    background-image: url(../images/philosophy/background/background-mobile@2x.jpg);
+    background-image: url(./../images/philosophy/background/background-mobile@2x.webp);
   }
 }
 
@@ -96,12 +96,12 @@
   }
 
   .philosophy__content {
-    background-image: url(../images/philosophy/background/background-tablet.jpg);
+    background-image: url(./../images/philosophy/background/background-tablet.webp);
     padding-bottom: 306px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 2dppx),
       (min-resolution: 192dpi) {
-      background-image: url(../images/philosophy/background/background-tablet@2x.jpg);
+      background-image: url(./../images/philosophy/background/background-tablet@2x.webp);
     }
   }
 
@@ -118,7 +118,7 @@
   }
 
   .details__list {
-    gap: 32px;
+    row-gap: 32px;
     flex-wrap: wrap;
     min-width: 336px;
     display: flex;
@@ -150,12 +150,12 @@
   }
 
   .philosophy__content {
-    background-image: url(../images/philosophy/background/background-desktop.jpg);
+    background-image: url(./../images/philosophy/background/background-desktop.webp);
     padding-bottom: 290px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 2dppx),
       (min-resolution: 192dpi) {
-      background-image: url(../images/philosophy/background/background-desktop@2x.jpg);
+      background-image: url(./../images/philosophy/background/background-desktop@2x.webp);
     }
   }
 
@@ -164,7 +164,6 @@
     flex-direction: row;
     padding-top: 44px;
     padding-bottom: 44px;
-    gap: 122px;
   }
 
   .details__list {

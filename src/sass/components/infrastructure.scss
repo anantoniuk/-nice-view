@@ -18,11 +18,16 @@
   }
 
   &__bgfoto {
-    background-image: url('./../img/infrastructure.jpg');
+    background-image: url(../images/infastructure/infrastructure.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 40px 20px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../images/infastructure/infrastructure@2x.webp);
+    }
     position: relative;
   }
 
