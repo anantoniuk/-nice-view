@@ -1,20 +1,6 @@
-// .mobile-menu__wrapp {
-//   background-image: linear-gradient(
-//     to bottom right,
-//     $colorTextPrimary 40%,
-//     $colorTextSecondary
-//   );
-//   position: fixed;
-//   inset: 0;
-//   padding-top: 80px;
-//   transform: translateX(-100%);
-//   transition: transform 1s linear;
-// }
-// .mobile-menu__wrapp.is-open {
-//   transform: translateX(0);
-// }
 @media (max-width: 767px) {
   .mobile-menu__wrapp {
+    z-index: 9;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(
