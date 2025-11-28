@@ -48,7 +48,7 @@
     font-weight: 700;
     font-size: 20px;
     color: $colorTextModal;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     width: 273px;
   }
 
@@ -157,6 +157,7 @@ input:focus::placeholder {
       font-size: 28px;
       text-align: center;
       min-width: 410px;
+      margin-bottom: 40px;
     }
   }
   .modal__form {
