@@ -57,6 +57,9 @@
 // desktop-------------------
 @media screen and (min-width: 1280px) {
   .hero {
+    &__button{
+      opacity: 0.9;
+    }
     background-image: url(../images/hero/hero-bg-desktop.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 2dppx),
