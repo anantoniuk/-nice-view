@@ -32,12 +32,10 @@
 
   &__details {
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 16px;
-
+    border-radius: 8px;
     max-width: 280px;
     max-height: 351px;
-
-    padding: 24px 0 0 18px;
+    padding: 24px 18px;
     margin: 0 0;
 
     display: flex;
@@ -53,15 +51,15 @@
   }
 
   &__supermarket-second {
-    &__circle-second {
-      order: 2;
-    }
-    &__locations-second {
-      order: 1;
-      text-align: left;
-    }
+    display: flex;
   }
-
+  &__circle-second {
+    order: 2;
+  }
+  &__locations-second {
+    order: 1;
+    text-align: left;
+  }
   &__circle {
     width: 101px;
     height: 101px;
@@ -82,7 +80,7 @@
   &__time {
     font-size: 14px;
     font-weight: 600;
-    max-width: 72px;
+    max-width: 69px;
   }
 
   &__locations {
@@ -95,6 +93,9 @@
 @media (min-width: 768px) {
   .infrastructure__title {
     font-size: 40px;
+  }
+  .infrastructure__details {
+    animation: moveObject 9s infinite ease-in-out alternate;
   }
 }
 @keyframes moveObject {
