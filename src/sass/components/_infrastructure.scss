@@ -90,12 +90,21 @@
     line-height: 1.2;
   }
 }
+// ..........................TABLET VERSION .....................
 @media (min-width: 768px) {
   .infrastructure__title {
     font-size: 40px;
   }
   .infrastructure__details {
     animation: moveObject 9s infinite ease-in-out alternate;
+  }
+  .infrastructure__bgfoto {
+    background-image: url(../images/infastructure/infrastructure-tablet.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../images/infastructure/infrastructure-tablet@2x.webp);
+    }
   }
 }
 @keyframes moveObject {
@@ -104,5 +113,18 @@
   }
   to {
     left: calc(100% - 280px);
+  }
+}
+
+// ..........................DESKTOP VERSION .....................
+
+@media screen and (min-width: 1280px) {
+  .infrastructure__bgfoto {
+    background-image: url(../images/infastructure/infrastructure-desktop.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../images/infastructure/infrastructure-desktop@2x.webp);
+    }
   }
 }
