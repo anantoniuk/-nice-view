@@ -207,7 +207,7 @@
           <p class="modal__text--pop">
             We will send you more photos, videos and information by mail
           </p>
-          <form class="form__field--pop" tabindex="1" action="#">
+          <form class="form__field--pop" tabindex="1" data-form-subscribe>
             <div class="field__meta--pop">
               <input
                 class="field__input--pop"
@@ -225,6 +225,37 @@
           </form>
         </div>
       </div>
+      <!-- ------------- -->
+      <dialog class="subscribe-popup" data-modal-subscribe>
+        <button class="modal__btn-close--popup" data-modal-pop-adress-close>
+          <svg
+            class="icon__close--pop"
+            width="15"
+            height="15"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.48533 6.6L15.0853 0L16.9707 1.88533L10.3707 8.48533L16.9707 15.0853L15.0853 16.9707L8.48533 10.3707L1.88533 16.9707L0 15.0853L6.6 8.48533L0 1.88533L1.88533 0L8.48533 6.6Z"
+              fill="#7E6D53"
+            />
+          </svg>
+        </button>
+        <div class="subscribe-popup__content" data-form-content>
+          <div class="subscribe-popup__photo">
+            <img
+              class="subscribe-popup__img"
+              src="./images/apartment/pop-up.png"
+              alt="pop-up-adress"
+            />
+          </div>
+          <div class="subscribe-popup__text">
+            <h3 class="subscribe-popup__message">GREAT!</h3>
+            <h3 class="subscribe-pop-up__message">NOW CHECK YOUR MAIL</h3>
+          </div>
+        </div>
+      </dialog>
     </div>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   </div>
