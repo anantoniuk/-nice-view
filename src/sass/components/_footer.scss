@@ -60,6 +60,16 @@
   color: $colorText;
 }
 
+.navigation__link,
+.contacts__link {
+  transition: color 0.3s ease;
+}
+
+.navigation__link:hover,
+.contacts__link:hover {
+  color: #7f6e54;
+}
+
 .contacts__item,
 .contacts__item-email {
   max-width: 135px;
@@ -111,6 +121,11 @@
 
 .agree__link--line {
   text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.agree__link--line:hover {
+  color: #c5ab839a;
 }
 
 // ..........................TABLET VERSION .....................
