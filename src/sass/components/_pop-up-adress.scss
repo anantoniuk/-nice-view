@@ -1,0 +1,114 @@
+.subscribe-popup {
+  //     border-radius: 24px;
+  // padding: 40px 100px;
+  //   padding: 0;
+  //   border: 0;
+  //   outline: 0;
+
+  color: #7e6d53;
+  border: solid transparent;
+  border-radius: 24px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  overflow: visible;
+  background-color: #ede9e3;
+     padding-block: 37px;
+    padding-inline: 40px;
+    
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+   
+    // animation: backdropFadeIn 260ms cubic-bezier(0.2, 0.9, 0.3, 1) both;
+  }
+  &__content {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+
+    // min-height: 250px;
+    // padding: 15px 50px;
+    // border-radius: 8px;
+
+    // transform-origin: center;
+    // will-change: transform, opacity, filter;
+    // animation: popOut 420ms cubic-bezier(0.2, 0.9, 0.3, 1) both;
+    // box-shadow: 0 10px 30px rgba(2, 6, 23, 0.35);
+  }
+  //   &__content--animate {
+  //     animation: popIn 420ms cubic-bezier(0.2, 0.9, 0.3, 1) both,
+  //       subtlePulse 2400ms ease-in-out 800ms infinite;
+  //   }
+  &__text {
+    display: flex;
+    font-weight: 600;
+    font-size: 12px;
+    gap: 16px;
+    flex-direction: column;
+    text-align: center;
+   
+  }
+}
+
+.subscribe-popup__img{
+  min-width: 100px;
+
+
+}
+.modal__btn-close--popup {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5px;
+  border-radius: 50%;
+  z-index: 8;
+  background-color: transparent;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.no__scroll-pop-adress {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-popup{
+     &__content {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 110px;
+
+
+   
+  }
+   &__text {
+    display: flex;
+    font-weight: 600;
+    font-size: 16px;
+    gap: 16px;
+    flex-direction: column;
+    text-align: center;
+   
+  }
+ 
+
+  }
+   .subscribe-popup__img{
+  min-width: 130px;
+
+
+
+}}
+
+
