@@ -90,7 +90,6 @@
     line-height: 1.2;
   }
 }
-// ..........................TABLET VERSION .....................
 @media (min-width: 768px) {
   .infrastructure__title {
     font-size: 40px;
@@ -115,8 +114,6 @@
     left: calc(100% - 280px);
   }
 }
-
-// ..........................DESKTOP VERSION .....................
 
 @media screen and (min-width: 1280px) {
   .infrastructure__bgfoto {

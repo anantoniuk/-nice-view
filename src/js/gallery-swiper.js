@@ -1,12 +1,9 @@
 const swiper = new Swiper('.swiper', {
-  // Параметри
-  effect: 'creative', //інші ефекти: "slide", "fade", "cube", "coverflow", "flip", "cards"
-  // Для режиму "creative"
+  effect: 'creative',
   creativeEffect: {
     prev: {
       translate: ['-80%', 0, 0],
       scale: 0.5,
-     
     },
     next: {
       translate: ['80%', 0, 0],
@@ -15,21 +12,15 @@ const swiper = new Swiper('.swiper', {
   },
 
   loop: true,
-  //   Кількість слайдів на екрані
   slidesPerView: 3,
-  //   Активний слайд в центрі
   centeredSlides: true,
 
-  // Якщо потрібна пагінація
   pagination: {
     el: '.swiper-pagination',
-    type: 'bullets', // default, інші варіанти: "fraction", "progressbar", "custom"
-    clickable: true, // щоб можна було клікати по крапках пагінації
+    type: 'bullets',
+    clickable: true,
   },
 
-  // Якщо потрібні стрілки навігації
-
-  // Адаптив
   breakpoints: {
     320: {
       navigation: {

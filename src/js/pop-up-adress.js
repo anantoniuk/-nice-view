@@ -19,7 +19,6 @@ const handleSubmit = event => {
   event.target.reset();
 };
 
-// popup?.addEventListener('click', handlePopupClose);
 subscribeForm?.addEventListener('submit', handleSubmit);
 
 closeBtn.addEventListener('click', handlePopupClose);
