@@ -8,13 +8,13 @@ console.log(closeBtn);
 const handlePopupClose = event => {
   if (subscribeContent && !subscribeContent.contains(event.target)) {
     popup.close();
+    document.body.classList.remove('no__scroll-pop');
   }
 };
 
 const handleSubmit = event => {
   event.preventDefault();
   modal.classList.add('is-hidden-pop');
-  document.body.classList.add('no__scroll-pop-adress');
   popup.showModal();
   event.target.reset();
 };
